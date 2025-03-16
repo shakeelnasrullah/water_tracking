@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:water_tracker/boarding/boarding_item.dart';
-import 'package:water_tracker/login.dart';
+import 'package:water_tracker/login/login.dart';
 
 class BoardingScreen extends StatefulWidget {
   const BoardingScreen({super.key});
@@ -67,7 +67,7 @@ class _BoardingScreenState extends State<BoardingScreen> {
 
   void _goToDashBoard() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => const LoginScreen()));
+        context, MaterialPageRoute(builder: (context) =>  LoginScreen()));
   }
 
   @override
